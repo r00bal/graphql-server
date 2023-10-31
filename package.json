@@ -1,0 +1,23 @@
+{
+	"name": "graphql-server",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"gen:types": "pnpm graphql-codegen --config .graphqlrc.ts",
+		"gen:seeds": "pnpm tsx prisma/seed.ts"
+	},
+	"dependencies": {
+		"@apollo/server": "^4.9.5",
+		"@eddeee888/gcg-typescript-resolver-files": "^0.7.1",
+		"@graphql-codegen/cli": "^5.0.0",
+		"@prisma/client": "^5.5.2",
+		"graphql": "^16.8.1",
+		"prettier": "2",
+		"prisma": "^5.5.2",
+		"tsx": "^3.14.0",
+		"typescript": "^5.2.2"
+	},
+	"devDependencies": {
+		"@faker-js/faker": "^8.2.0"
+	}
+}
